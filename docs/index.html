@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         .header {
             display: flex;
@@ -26,10 +27,13 @@
             display: flex;
             padding: 20px;
         }
-        .sidebar {
+        .sidebar, .right-sidebar {
             width: 20%;
-            padding-right: 20px;
-            border-right: 1px solid #ccc;
+            padding: 1em;
+            background-color: #fff;
+            margin: 0 1em 1em 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .content {
             width: 80%;
@@ -91,13 +95,25 @@
                 <h2>Linux Ultrabook from Germany</h2>
                 <p>What the fuck is Tuxon laptop and who the fuck is Tuxon company.</p>
                 <p><strong>By Konorid</strong></p>
+                <hr>
             </div>
             <div class="article">
                 <img src="https://i.imgur.com/55VkQMv.png" alt="Article Image" width="400px" height="auto">
                 <h2>Shall i do something idk</h2>
                 <p>Why shouldn't i do this hard decision</p>
+                <hr>
             </div>
         </main>
-    </div>
+        <aside class="right-sidebar">
+          <section class="whats-hot">
+              <h2>Что популярно</h2>
+              <ul>
+                  <li><a href="#">Обзор гаджетов для дома</a></li>
+                  <li><a href="#">Тренды 2024 года</a></li>
+                  <li><a href="#">Лучшие книги месяца</a></li>
+              </ul>
+          </section>
+      </aside>
+  </div>
 </body>
 </html>
