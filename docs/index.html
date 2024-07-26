@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Student Resume</title>
-    <style>
-        body {
-            font: italic small-caps bold 20px/2 cursive;
-            text-align: center;
-            line-height: 2.5em;
-            margin: 0;
-        }
+    <head>
+        <meta charset="utf-8">
+        <title> Student Resume </title>
+      <style> 
 
-        .text {
-            color: white;
-        }
-
-        .background-image {
+body {  font: italic small-caps bold 20px/2 cursive;
+        text-align: center;
+        line-height: 2.5em;
+}
+.text {
+        color:white;
+}
+#aboutme {
+                  width:70%;
+                  overflow: auto;
+                  margin: 20px auto;
+                  border: 6px rgb(25, 116,210) solid;
+                  background-image: url('https://i.imgur.com/qlPWf6B.jpeg');
+                  background-size: cover;
+                  box-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
+                  padding: 6px;
+}
+.background-image {
             position: fixed;
             top: 0;
             left: 0;
@@ -23,165 +30,125 @@
             height: 100%;
             z-index: -1;
             background: url('https://i.imgur.com/OqyKIq7.jpeg') no-repeat center center/cover;
-            filter: blur(5px);
-        }
-
-        .container {
-            display: grid;
-            grid-template-areas:
-                'header header header'
-                'nav main aside'
-                'footer footer footer';
-            grid-template-columns: 0.5fr 3.5fr 1fr;
-            grid-template-rows: auto 4fr 0.5fr;
-
-            height: 100vh;
-            gap: 10px;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        header, nav, main, aside, footer {
+            filter: blur(5px);}
+#contacts {
+            margin: 20px auto;
+            width: 70%;
             background-image: url('https://i.imgur.com/qlPWf6B.jpeg');
             background-size: cover;
-            border: 6px rgb(25, 116, 210) solid;
+            border: 6px rgb(25, 116,210) solid;
             box-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
-            padding: 10px;
-            overflow: auto;
-        }
-
-        header {
-            grid-area: header;
-        }
-
-        nav {
-            grid-area: nav;
-        }
-
-        main {
-            grid-area: main;
-        }
-
-        aside {
-            grid-area: aside;
-        }
-
-        footer {
-            grid-area: footer;
-        }
-
-        .header {
-            text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
-        }
-
-        p {
-            color: white;
-            font-family: "Courier New", sans-serif;
-            font-size: 20px;
-        }
-
-        h1 {
-            color: white;
-            font-size: 40px;
-            text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
-        }
-
-        h2 {
-            color: red;
-            font-size: 27px;
-        }
-
-        ul {
-            color: white;
-            text-align: left;
-            font: monospace 20px bold;
-            text-decoration: underline;
-        }
-
-        .two-column-list {
+            padding: 6px;
+  }
+.two-column-list {
+            align-content: center;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            list-style: none;
-            padding: 0;
+            grid-template-columns: 1fr 1fr; /* 2 columnss with widht*/
+            gap: 10px; /* space between*/}
+.two-column-list li {
+            max-width: 200px; /* max widht of column */
+            word-wrap: break-word; /* word break (test it)*/
+            justify-content: center; /* horizontal center-align??? */
         }
-
-        .two-column-list li {
-            word-wrap: break-word;
-            justify-content: center;
+.header {
+          text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
+}
+p {
+        color: white;
+        font-family: "Courier New", sans-serif;
+        font-size: 20px;
+       
         }
-
-        #cat {
-            width: 100px;
+h1 {
+        color: white;
+        font-size: 40px;
+        text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
+        
+} 
+h2{
+        color: red;
+        font-size: 27px;
+}
+ul {
+          color: white;
+          text-align: left;
+          font: monospace 20px bold;
+          text-decoration: underline;
+        } 
+.positives
+{
+            width: 70%;
+            margin: auto;
+            border: 6px solid rgb(25, 116,210);
+            background-image: url('https://i.imgur.com/qlPWf6B.jpeg');
+            backdrop-filter: blur(5px);
+            background-size: cover;
+            box-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
+            padding: 6px;
+          }
+        #cat {width: 100px;
             margin-left: 10px;
-            margin-bottom: 0px;
-        }
-
-        .logo {
-            display: inline-block;
-            margin-right: 10px;
-        }
-    </style>
+            margin-bottom: 0px;}
+      </style>
 </head>
 <body>
-    <div class="background-image"></div>
-    <div class="container">
-        <header>
-            <h1>My student resume</h1>
-        </header>
-        <nav>
-            <h2 class="header">Navigation</h2>
-            <!-- Add navigation links here -->
-        </nav>
-        <main>
-            <section>
-                <h2 class="header">About me:</h2>
-                <p>Hi, my name is <strong>Yauheni</strong>.<br> I am from <em>Belarus</em>, small city of <em>Pinsk</em>.<br> I'm <strong>25 years old</strong>.
-                    I'm participating in MigraCode entrance exam and that's my showpage.<br>
-                    I like animals and rainy weather :) <br>
-                    I don't like to pay my bills, because they're so expensive in <abbr title="At least in Barcelona for sure.">Spain</abbr> :(
-                </p>
-            </section>
-            <section>
-                <h2 class="header">My positive qualities</h2>
-                <p>So, let me tell you my positive qualities that I think make me a great candidate:</p>
-                <blockquote>
-                    <ul class="two-column-list">
-                        <li>Learning fast</li>
-                        <li>Flexible</li>
-                        <li>Curious</li>
-                        <li>Tolerant and open</li>
-                        <li>Love kittens xd</li>
-                        <li>I'm a big GEEK</li>
-                        <li>If I'm not <q>something</q> today, I will be it tomorrow</li>
-                    </ul>
-                </blockquote>
-                <p>I also started learning Java on FreeCodeCamp to prepare for the start of the course, and I promise (first and foremost to myself) to put 120% effort into studying :)</p>
-                <img id="cat" src="https://i.imgur.com/6gU9m8O.png" width="100" height="100" alt="Cittie Kitty">
-            </section>
-        </main>
-        <aside>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AyubHZCEOFY?si=qniGiuFMA50QUt9h"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </aside>
-        <footer>
-            <h2 class="header">Some of my contacts</h2>
-            <p>
-                <a class="logo" href="https://www.instagram.com/kongruenti/">
-                    <img src="https://i.imgur.com/jWnHAAy.png" width="50" height="50" alt="Instagram Profile">
-                </a>
-                <a class="logo" href="https://www.facebook.com/evgeniy.natynchik/">
-                    <img src="https://i.imgur.com/VgkNYXI.png" width="50" height="50" alt="Facebook Profile">
-                </a>
-                <a class="logo" href="https://t.me/holodnaya_vesna">
-                    <img src="https://i.imgur.com/gjrzSSM.png" width="50" height="50" alt="Telegram Profile">
-                </a>
-                <a class="logo" href="https://api.whatsapp.com/send?phone=34600354121">
-                    <span>+34-600-354-121</span>
-                </a>
-            </p>
-        </footer>
-    </div>
-</body>
+ <div class="background-image"></div>
+ <header>
+ <h1> My student resume </h1>
+  </header>
+<main>
+  <article>
+   <section>
+     <div id="aboutme"> 
+      <h2 class="header">About me:</h2>
+     
+      <p>Hi, my name is <strong>Yauheni</strong>.<br> I am from <em>Belarus</em>, small city of <em>Pinsk</em>.<br> I'm <strong>25 years old</strong>.
+        I'm participating in MigraCode entrance exam and that's my showpage.<br>
+     I like animals and rainy weather :) 
+     <br>
+     I don't like to pay my bills, because they're so expensive in <abbr title="At least in barcelona for sure.">Spain</abbr>  :(      
+         </p> </div>
+    </section>
+    <section> <div class="positives">
+       <h2 class="header"> My positive qualities </h2>
+             <p>So, let me tell you my positive qualities that I think make me a great              candidate:</p>
+              <blockquote>  
+               <ul class="two-column-list">
+                <li>Learning fast</li>
+                <li>Flexible </li>
+                <li> Curious </li>
+                <li> Tolerant and open</li> 
+                <li>Love kittens xd</li>
+                <li>I'm a big GEEK</li>
+                <li>If im not <q>something</q> today, i will be it tomorow</li>
+               </ul>
+              </blockquote> 
+            
+      <p>I also started learning Java on FreeCodeCamp to prepare for the start of the course,
+       and I promise (first and foremost to myself) to put 120% effort into studying :)
+       </p>
+      <img id="cat" src="https://i.imgur.com/6gU9m8O.png" width="100" height="100" alt="Cittie Kitty">
+      </div>
+    </section>  
+<div id="contacts"> <h2 class="header">Some of my contacts</h2>  
+<p>
+  <a class="logo" href="https://www.instagram.com/kongruenti/">
+        <img src="https://i.imgur.com/jWnHAAy.png" width="50" height="50" alt="Instagram Profile">
+    </a>
+<a class="logo" href="https://www.facebook.com/evgeniy.natynchik/">
+        <img src="https://i.imgur.com/VgkNYXI.png" width="50" height="50" alt="Facebook Profile">
+    </a> 
+<a class="logo" href="https://t.me/holodnaya_vesna">
+        <img src="https://i.imgur.com/gjrzSSM.png" width="50" height="50" alt="telegram profile">
+  <footer class="header" href="https://api.whatsapp.com/send?phone=34600354121">
+    +34-600-354-121
+  </footer>
+    </a> 
+      </p>  </div>
+ </article>
+       </main> 
+       <aside><iframe width="560" height="315" src="https://www.youtube.com/embed/AyubHZCEOFY?si=qniGiuFMA50QUt9h"
+       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></aside> 
+    </body>
 </html>
