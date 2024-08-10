@@ -19,7 +19,7 @@ document.getElementById('addcomm').addEventListener('click', (event) => {
 
     element_comment_section.appendChild(new_span);
     let new_li = document.createElement('li');
-    new_li.setAttribute("class", 'latest ul');
+    new_li.setAttribute("class", 'comment');
     new_li.innerText = document.getElementById('commentinp').value;
 
     element_comment_section.appendChild(new_li);
