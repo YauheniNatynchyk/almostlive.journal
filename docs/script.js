@@ -20,7 +20,7 @@ function convertToNumber(value) {
     element_comment_section.appendChild(new_span);
     let new_li = document.createElement('li');
     new_li.innerText = document.getElementById('commentinp').value;
-    new_li.classList.toggle('');
+    new_li.classList.toggle('sidebar');
   
     element_comment_section.appendChild(new_li);
   
