@@ -12,15 +12,17 @@ function convertToNumber(value) {
 
 document.getElementById('addcomm').addEventListener('click', (event) => {
   let element_comment_section = document.getElementById('comment_section');
-  let new_span = document.createElement('span');
-  new_span.innerText = document.getElementById('username').value;
-  new_span.classList.toggle('header');
+  if (!(document.getElementById('username').value == '')) {
+    let new_span = document.createElement('span');
+    new_span.innerText = document.getElementById('username').value;
+    new_span.classList.toggle('header');
 
-  element_comment_section.appendChild(new_span);
-  let new_li = document.createElement('li');
-  new_li.setAttribute("class", 'latest ul');
-  new_li.innerText = document.getElementById('commentinp').value;
+    element_comment_section.appendChild(new_span);
+    let new_li = document.createElement('li');
+    new_li.setAttribute("class", 'latest ul');
+    new_li.innerText = document.getElementById('commentinp').value;
 
-  element_comment_section.appendChild(new_li);
+    element_comment_section.appendChild(new_li);
+  }
 
 });
