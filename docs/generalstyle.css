@@ -50,12 +50,12 @@ body {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.latest ul {
+.latest, .whats-hot ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.latest li 
+.latest, .whats-hot li 
     {
         display: block;
         margin-bottom: 10px;
