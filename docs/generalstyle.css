@@ -64,10 +64,12 @@ body {
         padding: 10px;
         border-bottom: 1px solid #ccc;
         text-decoration: none;
+        transition: margin-right 2s;
       }
 .latest li:hover, .whats-hot li:hover {
         background-color: #eee;
         box-shadow: 0 4px 8px rgba(87, 86, 86, 0.2);
+        transition: margin-right 2s;
 }
 .latest a, .whats-hot a {text-decoration: none;}
 .article {
