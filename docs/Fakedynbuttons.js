@@ -116,3 +116,40 @@ document.getElementById('FPS2').addEventListener('click', (event) => {
   element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
 
 });
+
+document.getElementById('eye1').addEventListener('click', (event) => {
+    let element_fps = document.getElementById('eyel');
+    let new_ul3 = document.createElement('ul');
+    let new_li3 = document.createElement('li');
+    let new_span3 = document.createElement('span');
+    new_span3.innerText = 'EyeCandy is a dynamic online platform designed for filmmakers, visual artists, and creatives to explore and showcase a vast collection of visual techniques. The website serves as both a learning resource and an inspiration hub, offering an extensive library of filmmaking techniques like "Bullet Time," "Dolly Zoom," and "Morphing," among many others. It’s a community-driven space where users can submit their work, interact with other creatives, and even download visual references like GIFs to use in their projects.';
+    let new_img3 = document.createElement('img');
+    new_img3.setAttribute("src", 'https://asset.eyecannndy.com/static/images/eyecandy-og.jpg');
+    new_img3.setAttribute("class", 'card-1');
+  
+    new_span3.appendChild(new_img3);
+  
+    new_li3.appendChild(new_span3);
+  
+    new_ul3.appendChild(new_li3);
+  
+    element_fps.appendChild(new_ul3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_FPS22 = document.getElementById('eye2');
+    element_FPS22.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
+  
+  document.getElementById('FPS2').addEventListener('click', (event) => {
+    let element_fps2 = document.getElementById('eyel');
+    element_fps2.replaceChildren();
+    let new_a3 = document.createElement('a');
+    new_a3.setAttribute("href", 'https://eyecannndy.com/');
+    new_a3.innerText = 'Eye cannndy - huge visual tecnics library';
+  
+    element_fps2.appendChild(new_a3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_FPS1 = document.getElementById('eye1');
+    element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
