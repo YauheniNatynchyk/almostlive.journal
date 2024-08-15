@@ -96,4 +96,6 @@ hr {
     border: 2px solid #0090d9;
   }
 
-
+#linklist {
+    background-color: bisque;
+}
