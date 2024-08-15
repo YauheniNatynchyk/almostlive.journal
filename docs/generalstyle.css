@@ -95,3 +95,28 @@ input {
 hr {
     border: 2px solid #0090d9;
   }
+
+  .warning-banner::before {
+    content: 'SITE UNDER DEVELOPMENT';
+    background: repeating-linear-gradient(
+        45deg,
+        yellow,
+        yellow 10px,
+        black 10px,
+        black 20px
+    );
+    color: black; 
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-shadow: 1px 1px 2px black, 0 0 1em         white,     0 0 0.2em white;
+    font-weight: bold; /* Bold text */
+    font-style: italic; /* Italic text */
+    text-align: center; /* Center the text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    line-height: 25px; /* Vertically center the text */
+    z-index: 1;
+}
