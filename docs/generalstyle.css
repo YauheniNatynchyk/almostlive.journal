@@ -71,7 +71,7 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 }
 input {
-    width: 100%;
+    width: 75%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
