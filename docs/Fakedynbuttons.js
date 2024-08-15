@@ -2,6 +2,8 @@ let element_OCCT2 = document.getElementById('OCCT2');
 element_OCCT2.style.visibility = (false) ? 'visible' : 'hidden';
 let element_MSIB2 = document.getElementById('MSIB2');
 element_MSIB2.style.visibility = (false) ? 'visible' : 'hidden';
+let element_FPS2 = document.getElementById('FPS2');
+element_FPS2.style.visibility = (false) ? 'visible' : 'hidden';
 
 
 document.getElementById('OCCT').addEventListener('click', (event) => {
@@ -41,8 +43,22 @@ document.getElementById('OCCT2').addEventListener('click', (event) => {
 
 });
 
-document.getElementById('MSIB').addEventListener('click', (event) => {
+document.getElementById('MSIB2').addEventListener('click', (event) => {
   let element_msi = document.getElementById('msi');
+  element_msi.replaceChildren();
+  let new_a2 = document.createElement('a');
+  new_a2.setAttribute("href", 'https://www.msi.com/Landing/afterburner/graphics-cards');
+  new_a2.innerText = 'Msi afterburner - videocard overclocking and control.';
+
+  element_msi.appendChild(new_a2);
+  event.target.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_MSIB = document.getElementById('MSIB');
+  element_MSIB.style.visibility = (true) ? 'visible' : 'hidden';
+
+});
+
+document.getElementById('MSIB').addEventListener('click', (event) => {
+  let element_msi2 = document.getElementById('msi');
   let new_ul2 = document.createElement('ul');
   let new_li2 = document.createElement('li');
   let new_span2 = document.createElement('span');
@@ -57,23 +73,46 @@ document.getElementById('MSIB').addEventListener('click', (event) => {
 
   new_ul2.appendChild(new_li2);
 
-  element_msi.appendChild(new_ul2);
+  element_msi2.appendChild(new_ul2);
   event.target.style.visibility = (false) ? 'visible' : 'hidden';
   let element_MSIB22 = document.getElementById('MSIB2');
   element_MSIB22.style.visibility = (true) ? 'visible' : 'hidden';
 
 });
 
-document.getElementById('MSIB2').addEventListener('click', (event) => {
-  let element_msi2 = document.getElementById('msi');
-  element_msi2.replaceChildren();
-  let new_a2 = document.createElement('a');
-  new_a2.setAttribute("href", 'https://www.msi.com/Landing/afterburner/graphics-cards');
-  new_a2.innerText = 'Msi afterburner - videocard overclocking and control.';
+document.getElementById('FPS1').addEventListener('click', (event) => {
+  let element_fps = document.getElementById('fps');
+  let new_ul3 = document.createElement('ul');
+  let new_li3 = document.createElement('li');
+  let new_span3 = document.createElement('span');
+  new_span3.innerText = 'FPS Monitor is a comprehensive system monitoring tool designed primarily for gamers and PC enthusiasts. This software provides real-time tracking and display of various system performance metrics, with a particular focus on frame rates in games, hence the "FPS" in its name. The application offers an unobtrusive on-screen display (OSD) that can be customized to show a wide array of system information. This includes not only frames per second, but also CPU and GPU usage, temperatures, clock speeds, memory usage, and network statistics. Users can choose which metrics to display and customize the OSD\'s appearance and position on the screen. FPS Monitor supports a vast library of games and applications, allowing it to work seamlessly across different software without conflicts. It\'s designed to have minimal impact on system performance, ensuring that the monitoring itself doesn\'t significantly affect the metrics being measured. One of FPS Monitor\'s key features is its ability to log performance data over time. This allows users to analyze their system\'s behavior during extended gaming sessions or benchmark tests, helping to identify potential performance issues or bottlenecks. The software also includes a desktop widget for monitoring system performance outside of games, and it offers multi-language support for international users. While it\'s not free like some alternatives, FPS Monitor provides a comprehensive suite of monitoring tools in a single, user-friendly package.';
+  let new_img3 = document.createElement('img');
+  new_img3.setAttribute("src", 'https://i.ytimg.com/vi/v_y6KoQe3oQ/maxresdefault.jpg');
+  new_img3.setAttribute("class", 'card-1');
 
-  element_msi2.appendChild(new_a2);
+  new_span3.appendChild(new_img3);
+
+  new_li3.appendChild(new_span3);
+
+  new_ul3.appendChild(new_li3);
+
+  element_fps.appendChild(new_ul3);
   event.target.style.visibility = (false) ? 'visible' : 'hidden';
-  let element_MSIB = document.getElementById('MSIB');
-  element_MSIB.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_FPS22 = document.getElementById('FPS2');
+  element_FPS22.style.visibility = (true) ? 'visible' : 'hidden';
+
+});
+
+document.getElementById('MSIB2').addEventListener('click', (event) => {
+  let element_msi3 = document.getElementById('msi');
+  element_msi3.replaceChildren();
+  let new_a3 = document.createElement('a');
+  new_a3.setAttribute("href", 'https://fpsmon.com/en/');
+  new_a3.innerText = 'FPS monitor - best overlay monitoring';
+
+  element_msi3.appendChild(new_a3);
+  event.target.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_FPS1 = document.getElementById('FPS1');
+  element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
 
 });
