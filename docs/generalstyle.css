@@ -57,7 +57,7 @@ body {
 }
 .article img {
     max-width: 98%;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px 5px 5px 5px;
     
 }
 .card-2 {
