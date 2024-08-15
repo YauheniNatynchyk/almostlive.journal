@@ -85,7 +85,7 @@ body {
 }
 .article a{text-decoration: none;
            color: #0090d9;
-           text-shadow: 1px 1px 0px #c545ba;
+           text-shadow: #c545ba 1px 0 10px;
 }
 .article img {
     max-width: 98%;
