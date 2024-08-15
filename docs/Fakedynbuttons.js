@@ -4,6 +4,8 @@ let element_MSIB2 = document.getElementById('MSIB2');
 element_MSIB2.style.visibility = (false) ? 'visible' : 'hidden';
 let element_FPS2 = document.getElementById('FPS2');
 element_FPS2.style.visibility = (false) ? 'visible' : 'hidden';
+let element_eye2 = document.getElementById('eye2');
+element_eye2.style.visibility = (false) ? 'visible' : 'hidden';
 
 
 document.getElementById('OCCT').addEventListener('click', (event) => {
