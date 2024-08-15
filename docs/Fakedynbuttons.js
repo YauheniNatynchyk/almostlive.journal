@@ -30,7 +30,6 @@ document.getElementById('OCCT').addEventListener('click', (event) => {
   new_li.appendChild(new_span);
 
   new_ul.appendChild(new_li);
-  new_ul.style.backgroundColor = '#ffccff';
 
   element_occtlink2.appendChild(new_ul);
   event.target.style.visibility = (false) ? 'visible' : 'hidden';
