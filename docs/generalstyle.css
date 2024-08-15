@@ -58,11 +58,10 @@ body {
 .article img {
     max-width: 98%;
     border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     
 }
-.card-2 {
-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
+
 .comment {
     list-style-type: none;
     width: 90%;
