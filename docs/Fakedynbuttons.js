@@ -140,7 +140,7 @@ document.getElementById('eye1').addEventListener('click', (event) => {
   
   });
   
-  document.getElementById('FPS2').addEventListener('click', (event) => {
+  document.getElementById('eye2').addEventListener('click', (event) => {
     let element_fps2 = document.getElementById('eyel');
     element_fps2.replaceChildren();
     let new_a3 = document.createElement('a');
