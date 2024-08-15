@@ -132,3 +132,9 @@ hr {
 #linklist {
     background-color: rgb(233, 233, 233);
 }
+
+#span1 {text-decoration: none;
+    color: #0090d9;
+    text-shadow: #c545ba 1px 0 10px;
+
+}
