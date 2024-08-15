@@ -65,9 +65,10 @@ body {
         border-bottom: 1px solid #ccc;
         text-decoration: none;
         transition: margin-right 2s; 
-        background-color: #444;
+        background-color: #c2c2c2;
         padding: 20px;
         border-radius: 10px;
+        color: #000000;
   
       }
 .latest li:hover, .whats-hot li:hover {
