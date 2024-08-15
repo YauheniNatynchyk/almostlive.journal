@@ -69,6 +69,7 @@ body {
         background-color: #eee;
         box-shadow: 0 4px 8px rgba(87, 86, 86, 0.2);
 }
+.latest a, .whats-hot a {text-decoration: none;}
 .article {
     margin-bottom: 20px;
 }
