@@ -70,6 +70,16 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
+#username {
+    width: 45%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
 input {
     width: 75%;
     padding: 8px;
