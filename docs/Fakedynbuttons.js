@@ -103,14 +103,14 @@ document.getElementById('FPS1').addEventListener('click', (event) => {
 
 });
 
-document.getElementById('MSIB2').addEventListener('click', (event) => {
-  let element_msi3 = document.getElementById('msi');
-  element_msi3.replaceChildren();
+document.getElementById('FPS2').addEventListener('click', (event) => {
+  let element_fps2 = document.getElementById('fps');
+  element_fps2.replaceChildren();
   let new_a3 = document.createElement('a');
   new_a3.setAttribute("href", 'https://fpsmon.com/en/');
   new_a3.innerText = 'FPS monitor - best overlay monitoring';
 
-  element_msi3.appendChild(new_a3);
+  element_fps2.appendChild(new_a3);
   event.target.style.visibility = (false) ? 'visible' : 'hidden';
   let element_FPS1 = document.getElementById('FPS1');
   element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
