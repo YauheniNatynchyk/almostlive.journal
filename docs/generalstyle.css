@@ -71,6 +71,7 @@ body {
         }
 .latest li a, .whats-hot li a {
     color: #0090d9;
+    text-align: center;
 
 }
 .latest li:hover, .whats-hot li:hover {
