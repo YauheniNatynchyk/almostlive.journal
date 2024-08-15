@@ -44,6 +44,10 @@ body {
 }
 .sidebar h2, .content h2 {
     margin-top: 0;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 .latest ul {
     list-style-type: none;
