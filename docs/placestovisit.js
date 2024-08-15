@@ -14,9 +14,8 @@ images = ['https://eaqxr36k8gu.exactdn.com/wp-content/uploads/2022/03/miradores-
 headers = ['Bunkers del Carmel',
    'El Born Centre de Cultura i Memòria',
    'Refugi 307', 
-   'Roman Barcino', 
-   'Palau Güell Basement'];
-let element_span = document.getElementById('span');
+   'Roman Barcino', 'Palau Güell Basement'];
+let element_span = document.getElementById('span1');
 headers.push(headers[0]);
 element_span.innerText = headers.shift();
 element_span.setAttribute("class", 'article a');
@@ -30,7 +29,7 @@ element_img.setAttribute("class", 'article img');
 
 
 document.getElementById('next').addEventListener('click', (event) => {
-  let element_span2 = document.getElementById('span');
+  let element_span2 = document.getElementById('span1');
   headers.push(headers[0]);
   element_span2.innerText = headers.shift();
   element_span2.setAttribute("class", 'article a');
@@ -45,7 +44,7 @@ document.getElementById('next').addEventListener('click', (event) => {
 });
 
 document.getElementById('previous').addEventListener('click', (event) => {
-  let element_span3 = document.getElementById('span');
+  let element_span3 = document.getElementById('span1');
   headers.unshift(headers.slice(-1)[0]);
   element_span3.innerText = headers.pop();
   element_span3.setAttribute("class", 'article a');
