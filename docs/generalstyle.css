@@ -50,19 +50,19 @@ body {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.latest, .whats-hot ul {
+.latest.whats-hot ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.latest, .whats-hot li 
+.latest.whats-hot li 
     {
         display: block;
         margin-bottom: 10px;
         padding: 10px;
         border-bottom: 1px solid #ccc;
       }
-.latest, .whats-hot li:hover {
+.latest.whats-hot li:hover {
         background-color: #eee;
         box-shadow: 0 4px 8px rgba(87, 86, 86, 0.2);
 }
