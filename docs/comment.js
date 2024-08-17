@@ -12,13 +12,13 @@ function convertToNumber(value) {
   let element_comment_section = document.getElementById('comment_section');
   if (!(document.getElementById('username').value == '')) {
   let new_span = document.createElement('span');
-  new_span.setAttribute("class", 'article a');
+  new_span.setAttribute("id", 'span 1');
   new_span.innerText = document.getElementById('username').value;
   
  
   element_comment_section.appendChild(new_span);
   let new_li = document.createElement('li');
-  new_li.setAttribute("class", 'comment');
+  new_li.setAttribute("id", 'span 1');
   new_li.innerText = document.getElementById('commentinp').value;
   
   element_comment_section.appendChild(new_li);
