@@ -6,8 +6,8 @@ let element_FPS2 = document.getElementById('FPS2');
 element_FPS2.style.visibility = (false) ? 'visible' : 'hidden';
 let element_eye2 = document.getElementById('eye2');
 element_eye2.style.visibility = (false) ? 'visible' : 'hidden';
-let element_eye2 = document.getElementById('mic2');
-element_eye2.style.visibility = (false) ? 'visible' : 'hidden';
+let element_mic2 = document.getElementById('mic2');
+element_mic2.style.visibility = (false) ? 'visible' : 'hidden';
 
 
 document.getElementById('OCCT').addEventListener('click', (event) => {
