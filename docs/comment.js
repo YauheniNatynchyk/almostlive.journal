@@ -14,7 +14,7 @@ document.getElementById('addcomm').addEventListener('click', (event) => {
   let element_comment_section = document.getElementById('comment_section');
   if (!(document.getElementById('username').value == '')) {
     let new_span = document.createElement('span');
-    new_span.setAttribute("id", 'username');
+    new_span.setAttribute("class", 'latest li');
     new_span.innerText = document.getElementById('username').value;
 
     element_comment_section.appendChild(new_span);
