@@ -145,7 +145,7 @@ document.getElementById('eye1').addEventListener('click', (event) => {
   });
   
   document.getElementById('eye2').addEventListener('click', (event) => {
-    let element_eyel = document.getElementById('eyel');
+    let element_eye2 = document.getElementById('eyel');
     element_eye2.replaceChildren();
     let new_a3 = document.createElement('a');
     new_a3.setAttribute("href", 'https://eyecannndy.com/');
