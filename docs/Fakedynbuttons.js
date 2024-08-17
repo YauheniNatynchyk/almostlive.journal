@@ -233,3 +233,40 @@ document.getElementById('eye1').addEventListener('click', (event) => {
     element_uiui1.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
+
+  document.getElementById('urban1').addEventListener('click', (event) => {
+    let element_urban = document.getElementById('urban');
+    let new_ul3 = document.createElement('ul');
+    let new_li3 = document.createElement('li');
+    let new_span3 = document.createElement('span');
+    new_span3.innerText = 'Welcome to UIUIUI.in, your ultimate destination for cutting-edge UI/UX design resources and inspiration. Whether you are a seasoned designer or just starting out, UIUIUI.in offers a vast collection of high-quality design templates, creative tools, and insightful tutorials to help you bring your ideas to life. Our platform is dedicated to making design accessible and enjoyable, empowering you to craft visually stunning and user-friendly interfaces. Explore our curated gallery, stay updated with the latest design trends, and join a community of innovators shaping the future of digital experiences.';
+    let new_img3 = document.createElement('img');
+    new_img3.setAttribute("src", 'https://i.ibb.co/CWmxmjM/image.png');
+    new_img3.setAttribute("class", 'card-1');
+  
+    new_span3.appendChild(new_img3);
+  
+    new_li3.appendChild(new_span3);
+  
+    new_ul3.appendChild(new_li3);
+  
+    element_urban.appendChild(new_ul3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_urban2 = document.getElementById('urban2');
+    element_urban2.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
+  
+  document.getElementById('urban2').addEventListener('click', (event) => {
+    let element_urban2 = document.getElementById('urban');
+    element_urban2.replaceChildren();
+    let new_a3 = document.createElement('a');
+    new_a3.setAttribute("href", 'https://uiuiui.in/en/');
+    new_a3.innerText = 'UiUiUi - customize your device!(Win,Linux,Android,MacOS)';
+  
+    element_urban2.appendChild(new_a3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_urban1 = document.getElementById('urban1');
+    element_urban1.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
