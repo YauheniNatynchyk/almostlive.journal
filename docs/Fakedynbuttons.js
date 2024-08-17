@@ -8,6 +8,8 @@ let element_eye2 = document.getElementById('eye2');
 element_eye2.style.visibility = (false) ? 'visible' : 'hidden';
 let element_mic2 = document.getElementById('mic2');
 element_mic2.style.visibility = (false) ? 'visible' : 'hidden';
+let element_uiui2 = document.getElementById('uiui2');
+element_uiui2.style.visibility = (false) ? 'visible' : 'hidden';
 
 
 document.getElementById('OCCT').addEventListener('click', (event) => {
@@ -222,8 +224,8 @@ document.getElementById('eye1').addEventListener('click', (event) => {
     let element_uiui2 = document.getElementById('uiui');
     element_uiui2.replaceChildren();
     let new_a3 = document.createElement('a');
-    new_a3.setAttribute("href", 'http://recordinghacks.com/microphones');
-    new_a3.innerText = 'recordinghacks - the greatest resource about mics with a huge mic specs database';
+    new_a3.setAttribute("href", 'https://uiuiui.in/en/');
+    new_a3.innerText = 'UiUiUi - customize your device!(Win,Linux,Android,MacOS)';
   
     element_uiui2.appendChild(new_a3);
     event.target.style.visibility = (false) ? 'visible' : 'hidden';
