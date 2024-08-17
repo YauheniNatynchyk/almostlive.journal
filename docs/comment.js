@@ -18,7 +18,7 @@ function convertToNumber(value) {
  
   element_comment_section.appendChild(new_span);
   let new_li = document.createElement('li');
-  new_li.setAttribute("id", 'span 1');
+  new_li.setAttribute("class", 'comment');
   new_li.innerText = document.getElementById('commentinp').value;
   
   element_comment_section.appendChild(new_li);
