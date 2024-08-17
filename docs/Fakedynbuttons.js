@@ -194,3 +194,40 @@ document.getElementById('eye1').addEventListener('click', (event) => {
     element_mic1.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
+
+  document.getElementById('uiui1').addEventListener('click', (event) => {
+    let element_uiui = document.getElementById('uiui');
+    let new_ul3 = document.createElement('ul');
+    let new_li3 = document.createElement('li');
+    let new_span3 = document.createElement('span');
+    new_span3.innerText = 'Every mic profile contains the mic’s specifications, links to all the best reviews and forum exchanges, a list of related microphones, a tag cloud describing the mic’s characteristics, and a long description that includes, as appropriate, the mic’s origin and history, construction and circuit details, common applications, insider information, and more. Modification and upgrade opportunities are provided, with a sidebar showing links to commercial modders who can help non-DIY types. And finally, for boutique mics, I interview the mic’s designer to get a fuller glimpse into the mic’s design intent and some of the technical magic embodied in the physical microphone. Microphone frequency-response graphs are presented in a common size and scale, facilitating comparisons. Click any such graph to see our new (November, 2010) graph-overlay tool, which will stack up two frequency graphs for direct visual comparison.';
+    let new_img3 = document.createElement('img');
+    new_img3.setAttribute("src", 'https://jonmattox.com/wp-content/uploads/2014/08/cover_50kribbon-1024x475.jpg');
+    new_img3.setAttribute("class", 'card-1');
+  
+    new_span3.appendChild(new_img3);
+  
+    new_li3.appendChild(new_span3);
+  
+    new_ul3.appendChild(new_li3);
+  
+    element_uiui.appendChild(new_ul3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_uiui2 = document.getElementById('uiui2');
+    element_uiui2.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
+  
+  document.getElementById('uiui2').addEventListener('click', (event) => {
+    let element_uiui2 = document.getElementById('uiui');
+    element_uiui2.replaceChildren();
+    let new_a3 = document.createElement('a');
+    new_a3.setAttribute("href", 'http://recordinghacks.com/microphones');
+    new_a3.innerText = 'recordinghacks - the greatest resource about mics with a huge mic specs database';
+  
+    element_uiui2.appendChild(new_a3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_uiui1 = document.getElementById('uiui1');
+    element_uiui1.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
