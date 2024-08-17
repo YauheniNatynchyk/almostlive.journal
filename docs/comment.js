@@ -12,7 +12,7 @@ function convertToNumber(value) {
   let element_comment_section = document.getElementById('comment_section');
   if (!(document.getElementById('username').value == '')) {
   let new_span = document.createElement('span');
-  new_span.setAttribute("id", 'span 1');
+  new_span.setAttribute("id", 'username');
   new_span.innerText = document.getElementById('username').value;
   
  
