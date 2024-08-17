@@ -243,7 +243,7 @@ document.getElementById('eye1').addEventListener('click', (event) => {
     let new_span3 = document.createElement('span');
     new_span3.innerText = 'Urban Exploration Resource offers articles, photo galleries, stories, and an active forum for the Urban Exploration and Infiltration Community. Information for exploration, vadding and urban vadding, tunnel vadding, steam tunnels, spelunking, urban spelunking, underground tunnels and passages. Information about Canada, Toronto, Ontario, and many other countries. A huge and ever-expanding database of buildings, tunnels, drains, factories, and bunkers, where anyone can add or update information. Abandoned buildings, drains, sewers, subway stations, factories, warehouses, offices, and the like can all be found here. Among others, places discussed include Canada Malting Company Limited (aka Canada Malt Plant), Silos, grain elevators in port mcnicoll, Whitby Psychiatric Hospital, and other closed and abandoned property, tunnels, steam tunnels, storm drains, sewers, hotels, airports, power plants, and much more!';
     let new_img3 = document.createElement('img');
-    new_img3.setAttribute("src", 'https://www.uer.ca/locations/galpics/norm/253037.jpg');
+    new_img3.setAttribute("src", 'https://easyurbex.com/wp-content/uploads/2023/01/peter-herrmann-B1iKeYH9oH0-unsplash-1-1024x681.jpg');
     new_img3.setAttribute("class", 'card-1');
   
     new_span3.appendChild(new_img3);
