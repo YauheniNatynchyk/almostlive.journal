@@ -176,7 +176,7 @@ document.getElementById('eye1').addEventListener('click', (event) => {
   
     element_fps.appendChild(new_ul3);
     event.target.style.visibility = (false) ? 'visible' : 'hidden';
-    let element_FPS22 = document.getElementById('eye2');
+    let element_FPS22 = document.getElementById('mic2');
     element_FPS22.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
