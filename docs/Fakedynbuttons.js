@@ -6,6 +6,8 @@ let element_FPS2 = document.getElementById('FPS2');
 element_FPS2.style.visibility = (false) ? 'visible' : 'hidden';
 let element_eye2 = document.getElementById('eye2');
 element_eye2.style.visibility = (false) ? 'visible' : 'hidden';
+let element_eye2 = document.getElementById('mic2');
+element_eye2.style.visibility = (false) ? 'visible' : 'hidden';
 
 
 document.getElementById('OCCT').addEventListener('click', (event) => {
@@ -152,6 +154,43 @@ document.getElementById('eye1').addEventListener('click', (event) => {
     element_fps2.appendChild(new_a3);
     event.target.style.visibility = (false) ? 'visible' : 'hidden';
     let element_FPS1 = document.getElementById('eye1');
+    element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
+  
+  document.getElementById('mic1').addEventListener('click', (event) => {
+    let element_fps = document.getElementById('mics');
+    let new_ul3 = document.createElement('ul');
+    let new_li3 = document.createElement('li');
+    let new_span3 = document.createElement('span');
+    new_span3.innerText = 'Every mic profile contains the mic’s specifications, links to all the best reviews and forum exchanges, a list of related microphones, a tag cloud describing the mic’s characteristics, and a long description that includes, as appropriate, the mic’s origin and history, construction and circuit details, common applications, insider information, and more. Modification and upgrade opportunities are provided, with a sidebar showing links to commercial modders who can help non-DIY types. And finally, for boutique mics, I interview the mic’s designer to get a fuller glimpse into the mic’s design intent and some of the technical magic embodied in the physical microphone. Microphone frequency-response graphs are presented in a common size and scale, facilitating comparisons. Click any such graph to see our new (November, 2010) graph-overlay tool, which will stack up two frequency graphs for direct visual comparison.';
+    let new_img3 = document.createElement('img');
+    new_img3.setAttribute("src", 'http://cdn.recordinghacks.com/images/blog/2011/podcast-microphones.jpg');
+    new_img3.setAttribute("class", 'card-1');
+  
+    new_span3.appendChild(new_img3);
+  
+    new_li3.appendChild(new_span3);
+  
+    new_ul3.appendChild(new_li3);
+  
+    element_fps.appendChild(new_ul3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_FPS22 = document.getElementById('eye2');
+    element_FPS22.style.visibility = (true) ? 'visible' : 'hidden';
+  
+  });
+  
+  document.getElementById('mic2').addEventListener('click', (event) => {
+    let element_fps2 = document.getElementById('mics');
+    element_fps2.replaceChildren();
+    let new_a3 = document.createElement('a');
+    new_a3.setAttribute("href", 'http://recordinghacks.com/microphones');
+    new_a3.innerText = 'recordinghacks - the greatest resource about mics with a huge mic specs database';
+  
+    element_fps2.appendChild(new_a3);
+    event.target.style.visibility = (false) ? 'visible' : 'hidden';
+    let element_FPS1 = document.getElementById('mic1');
     element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
