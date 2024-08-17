@@ -122,7 +122,7 @@ document.getElementById('FPS2').addEventListener('click', (event) => {
 });
 
 document.getElementById('eye1').addEventListener('click', (event) => {
-    let element_fps = document.getElementById('eyel');
+    let element_eyel = document.getElementById('eyel');
     let new_ul3 = document.createElement('ul');
     let new_li3 = document.createElement('li');
     let new_span3 = document.createElement('span');
@@ -137,29 +137,29 @@ document.getElementById('eye1').addEventListener('click', (event) => {
   
     new_ul3.appendChild(new_li3);
   
-    element_fps.appendChild(new_ul3);
+    element_eyel.appendChild(new_ul3);
     event.target.style.visibility = (false) ? 'visible' : 'hidden';
-    let element_FPS22 = document.getElementById('eye2');
-    element_FPS22.style.visibility = (true) ? 'visible' : 'hidden';
+    let element_eye2 = document.getElementById('eye2');
+    element_eye2.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
   
   document.getElementById('eye2').addEventListener('click', (event) => {
-    let element_fps2 = document.getElementById('eyel');
-    element_fps2.replaceChildren();
+    let element_eyel = document.getElementById('eyel');
+    element_eye2.replaceChildren();
     let new_a3 = document.createElement('a');
     new_a3.setAttribute("href", 'https://eyecannndy.com/');
     new_a3.innerText = 'Eye cannndy - huge visual tecnics library';
   
-    element_fps2.appendChild(new_a3);
+    element_eye2.appendChild(new_a3);
     event.target.style.visibility = (false) ? 'visible' : 'hidden';
-    let element_FPS1 = document.getElementById('eye1');
-    element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
+    let element_eye1 = document.getElementById('eye1');
+    element_eye1.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
   
   document.getElementById('mic1').addEventListener('click', (event) => {
-    let element_fps = document.getElementById('mics');
+    let element_mics = document.getElementById('mics');
     let new_ul3 = document.createElement('ul');
     let new_li3 = document.createElement('li');
     let new_span3 = document.createElement('span');
@@ -174,23 +174,23 @@ document.getElementById('eye1').addEventListener('click', (event) => {
   
     new_ul3.appendChild(new_li3);
   
-    element_fps.appendChild(new_ul3);
+    element_mics.appendChild(new_ul3);
     event.target.style.visibility = (false) ? 'visible' : 'hidden';
-    let element_FPS22 = document.getElementById('mic2');
-    element_FPS22.style.visibility = (true) ? 'visible' : 'hidden';
+    let element_mic2 = document.getElementById('mic2');
+    element_mic2.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
   
   document.getElementById('mic2').addEventListener('click', (event) => {
-    let element_fps2 = document.getElementById('mics');
-    element_fps2.replaceChildren();
+    let element_mic2 = document.getElementById('mics');
+    element_mic2.replaceChildren();
     let new_a3 = document.createElement('a');
     new_a3.setAttribute("href", 'http://recordinghacks.com/microphones');
     new_a3.innerText = 'recordinghacks - the greatest resource about mics with a huge mic specs database';
   
-    element_fps2.appendChild(new_a3);
+    element_mic2.appendChild(new_a3);
     event.target.style.visibility = (false) ? 'visible' : 'hidden';
-    let element_FPS1 = document.getElementById('mic1');
-    element_FPS1.style.visibility = (true) ? 'visible' : 'hidden';
+    let element_mic1 = document.getElementById('mic1');
+    element_mic1.style.visibility = (true) ? 'visible' : 'hidden';
   
   });
