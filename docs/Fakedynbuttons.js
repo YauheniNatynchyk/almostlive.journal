@@ -200,9 +200,9 @@ document.getElementById('eye1').addEventListener('click', (event) => {
     let new_ul3 = document.createElement('ul');
     let new_li3 = document.createElement('li');
     let new_span3 = document.createElement('span');
-    new_span3.innerText = 'Every mic profile contains the mic’s specifications, links to all the best reviews and forum exchanges, a list of related microphones, a tag cloud describing the mic’s characteristics, and a long description that includes, as appropriate, the mic’s origin and history, construction and circuit details, common applications, insider information, and more. Modification and upgrade opportunities are provided, with a sidebar showing links to commercial modders who can help non-DIY types. And finally, for boutique mics, I interview the mic’s designer to get a fuller glimpse into the mic’s design intent and some of the technical magic embodied in the physical microphone. Microphone frequency-response graphs are presented in a common size and scale, facilitating comparisons. Click any such graph to see our new (November, 2010) graph-overlay tool, which will stack up two frequency graphs for direct visual comparison.';
+    new_span3.innerText = 'Welcome to UIUIUI.in, your ultimate destination for cutting-edge UI/UX design resources and inspiration. Whether you are a seasoned designer or just starting out, UIUIUI.in offers a vast collection of high-quality design templates, creative tools, and insightful tutorials to help you bring your ideas to life. Our platform is dedicated to making design accessible and enjoyable, empowering you to craft visually stunning and user-friendly interfaces. Explore our curated gallery, stay updated with the latest design trends, and join a community of innovators shaping the future of digital experiences.';
     let new_img3 = document.createElement('img');
-    new_img3.setAttribute("src", 'https://jonmattox.com/wp-content/uploads/2014/08/cover_50kribbon-1024x475.jpg');
+    new_img3.setAttribute("src", 'https://i.ibb.co/CWmxmjM/image.png');
     new_img3.setAttribute("class", 'card-1');
   
     new_span3.appendChild(new_img3);
